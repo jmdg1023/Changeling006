@@ -5,8 +5,6 @@ var searchList = [];
 var searchListContainer = $("#search-list-container");
 
 
-//http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={47e90d3bb97ea834a475591cd06eb8d3};
-//api.openweathermap.org / data / 2.5 / forecast ? lat = { lat } & lon={ lon }& appid={ 6b9b01d3d9f1c0c20437677fc0595010 };
 
 
 function searchCity(event) {
@@ -63,3 +61,20 @@ function renderSearchList() {
 searchButtonEl.on("click", searchCity);
 
 init();
+
+
+function getCityWeather() {
+    var weatherUrl = "https://api.openweathermap.org/data/2.5/uvi?lat=" + latitude + "&lon=" + longitude + "&appid=" + APIKey;
+    //api.openweathermap.org / data / 2.5 / forecast ? lat = { lat } & lon={ lon }& appid={ 6b9b01d3d9f1c0c20437677fc0595010 };
+    fetch(weatherUrl)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data)){
+        document.querySelector("temp").innerHTML =
+            document.querySelector("#feels").innerHTML =
+            document.querySelector("#humidity").innerHTML = 
+        
+
+    }
+}
