@@ -3,6 +3,7 @@ var searchButtonEl = $("#search-button");
 var inputEl = $("#search-input");
 var searchList = [];
 var searchListContainer = $("#search-list-container");
+var APIKey = "6b9b01d3d9f1c0c20437677fc0595010";
 
 
 
@@ -60,22 +61,6 @@ function searchCity(event) {
     init();
 
 
-    // function getCityWeather() {
-    //     var weatherUrl = "https://api.openweathermap.org/data/2.5/uvi?lat=" + latitude + "&lon=" + longitude + "&appid=" + APIKey;
-    //     //api.openweathermap.org / data / 2.5 / forecast ? lat = { lat } & lon={ lon }& appid={ 6b9b01d3d9f1c0c20437677fc0595010 };
-    //     fetch(weatherUrl)
-    //         .then(function (response) {
-    //             return response.json();
-    //         })
-    //         .then(function (data)){
-    //         document.querySelector("temp").innerHTML =
-    //             document.querySelector("#feels").innerHTML =
-    //             document.querySelector("#humidity").innerHTML = 
-
-
-    // }
-
-
     function getCityWeather() {
         var weatherUrl =
             "https://api.openweathermap.org/data/2.5/uvi?lat=" +
@@ -93,3 +78,14 @@ function searchCity(event) {
                 console.log(data);
             });
     }
+
+
+    function displayUVindex(uv) {
+        $.ajax({ // gets the UV index info
+            url: "https://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + uv,
+            method: "GET"
+        })
+            .then(function (response) {
+                $("#uvIndex").text(response.value);
+            });
+    };
