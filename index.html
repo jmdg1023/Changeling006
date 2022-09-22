@@ -19,13 +19,14 @@
     <h1 class="display-5">Weather Dashboard</h1>
 
   </header>
+
   <div class="container">
-    <div class="container mx-auto grid grid-cols-12 flex">
-      <!-- recent search list -->
-      <aside class="md:col-span-4 col-span-12 flex flex-col gap-2 px-4 mb-4 text-xl">
+    <div class="row ">
+
+      <aside class="col-12 col-md-3 col-xl-3 colOnex gap-2 px-4 mb-4 text-xl">
         <h1 class="text-center font-bold">Search for a city</h1>
 
-        <!-- SEARCH BAR -->
+
         <div class="container">
 
           <div class="row">
@@ -40,58 +41,26 @@
                       class="fa fa-search"></i></button>
                 </div>
               </div>
-              <!-- recent search list -->
+
               <aside class="md:col-span-4 col-span-12 flex flex-col gap-2 px-4 mb-4 text-xl" id="search-list-container">
                 <h2 class="text-center font-bold">Recent Search</h2>
               </aside>
       </aside>
     </div>
-    <div id="currentDayWeather" class=" col-12 col-md-9 col-xl-9">
-      <h2>TODAY</h2>
-      <div class="border border-dark  m-4 p-4 ">
-        <p class="date ">Date</p>
-        <p class="temp">Temperature:</p>
-        <p class="feels">Feels Like:</p>
-        <p class="humidity">Humidity:</p>
+    <<!-- forecast display -->
+      <div id="forecast" class="col-span-12 md:col-span-8 m-2">
+        <!-- today's forecast card -->
+        <div id="currentForecast" class="border-4 border-indigo-500/100 rounded-lg p-2 mb-4">
+
+        </div>
+
+        <!-- 5 days forecast cards -->
+        <div id="futureForecast" class="p-2 grid grid-cols-10">
+          <h3 class="text-xl font-bold mb-8 col-span-10">5-Day Forecast:</h3>
+        </div>
+
       </div>
-    </div>
-    <br>
-    <div>
-      <h2>Five-day forecast</h2>
-      <br>
-      <div class="row">
-        <div class="card flex mb-3 m-4 p-4 cardOne border border-dark" style="max-width: 200px">
-          <p class="date">Date</p>
-          <p class="temp">Temperature:</p>
-          <p class="uvIndex">UV Index:</p>
-          <p class="humidity">Humidity:</p>
-        </div>
-        <div class="card flex mb-3 m-4 p-4 cardOne border border-dark" style="max-width: 200px">
-          <p class="date">Date</p>
-          <p class="temp">Temperature:</p>
-          <p class="uvIndex">UV Index:</p>
-          <p class="humidity">Humidity:</p>
-        </div>
-        <div class="card flex mb-3 m-4 p-4 cardOne border border-dark" style="max-width: 200px">
-          <p class="date">Date</p>
-          <p class="temp">Temperature:</p>
-          <p class="uvIndex">UV Index:</p>
-          <p class="humidity">Humidity:</p>
-        </div>
-        <div class="card flex mb-3 m-4 p-4 cardOne border border-dark" style="max-width: 200px">
-          <p class="date">Date</p>
-          <p class="temp">Temperature:</p>
-          <p class="uvIndex">UV Index:</p>
-          <p class="humidity">Humidity:</p>
-        </div>
-        <div class="card flex mb-3 m-4 p-4 cardOne border border-dark" style="max-width: 200px">
-          <p class="date">Date</p>
-          <p class="temp">Temperature:</p>
-          <p class="uvIndex">UV Index:</p>
-          <p class="humidity">Humidity:</p>
-        </div>
-      </div>
-    </div>
+  </div>
 
   </div>
   </div>
@@ -110,7 +79,7 @@
 
 
 
-  </div>
+  </div> -->
 
 
 
