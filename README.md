@@ -9,15 +9,6 @@
 
 🔸 Site is live [HERE](https://jmdg1023.github.io/Changeling006)
 
-## Learning Resources 🔗
-
-🔸 []()
-
-🔸 []()
-
-🔸 []()
-
-
 
 ## User Story 👨
 
@@ -30,53 +21,44 @@ SO THAT I can plan a trip accordingly
 
 ## What this project does 💡💡💡
 
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
-WHEN I view the UV index
+```http
+1. WHEN user search for a city
+ THEN I will be presented with current and future conditions for that city and that city is added to the search history.
+
+2. WHEN viewing current weather conditions for that city
+THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index.
+
+3. WHEN I view the UV index
 THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
-WHEN I view future weather conditions for that city
+
+4. WHEN I view future weather conditions for that city
 THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-WHEN I click on a city in the search history
+
+5. WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
+```
 
 
 # Screenshots
 
+## Weather Dashboard
+![Weather Dashboard](./assets/images/weather-dashboard.jpg)
 
 
-## Index HTML / Homepage
-![IMAGE_DESCRIPTION](./assets/image/index.jpg)
+## Current and five day forecast
+![Current and five day forecast](./assets/images/forecast.jpg)
 
 
-## Cresendo Icon that links to home
-![IMAGE_DESCRIPTION](./assets/image/icon.jpg)
+## Recent Search Bar
+![Recent Search Bar](./assets/images/recent%20search.jpg)
 
+## Learning Resources 🔗
 
-## Search bar
-![IMAGE_DESCRIPTION](./assets/image/search-bar.jpg)
+🔸 [Previous Project search bar](https://github.com/jmdg1023/Project-Crescendo)
 
+🔸 [Tailwind](https://tailwindcss.com/)
 
-## About Us
-![IMAGE_DESCRIPTION](./assets/image/about-us.jpg)
-
-
-## Research searches bar
-![IMAGE_DESCRIPTION](./assets/image/recent-searches.jpg)
-
-
-## Search html with results
-![IMAGE_DESCRIPTION](./assets/image/search-html.jpg)
-
-
-## Video html
-![IMAGE_DESCRIPTION](./assets/image/video-html.jpg)
-
-
-## TinyUrl widget on video html
-![IMAGE_DESCRIPTION](./assets/image/tinyUrl.jpg)
+🔸 [Build a Weather App with HTML, CSS & JavaScript on YouTube](https://www.youtube.com/watch?v=WZNG8UomjSI&t=1505s)
 
 
 

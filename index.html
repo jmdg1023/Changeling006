@@ -17,71 +17,46 @@
 <body>
   <header class="jumbotron bg-violet-500 text-7xl">
     <h1 class="display-5">Weather Dashboard</h1>
-
   </header>
 
-  <div class="container">
+  <div class="grid-cols-12">
     <div class="row ">
-
+      <!-- search -->
       <aside class="col-12 col-md-3 col-xl-3 colOnex gap-2 px-4 mb-4 text-xl">
         <h1 class="text-center font-bold">Search for a city</h1>
 
 
-        <div class="container">
+        <div class="relative col-12">
 
-          <div class="row">
 
-            <div class="col-12">
+          <div class="input-group mb-3">
+            <input type="search" id="search-input" class="form-control input-text" placeholder="Search City"
+              aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button id="search-button" type="submit" class="btn btn-outline-dark bg-violet-500 btn-md">
+                <i class="fa fa-search"></i></button>
+            </div>
+          </div>
 
-              <div class="input-group mb-3">
-                <input type="search" id="search-input" class="form-control input-text" placeholder="Search City"
-                  aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                  <button id="search-button" type="submit" class="btn btn-outline-dark bg-violet-500 btn-md"><i
-                      class="fa fa-search"></i></button>
-                </div>
-              </div>
-
-              <aside class="md:col-span-4 col-span-12 flex flex-col gap-2 px-4 mb-4 text-xl" id="search-list-container">
-                <h2 class="text-center font-bold">Recent Search</h2>
-              </aside>
+          <aside class="md:col-span-4 col-span-12 flex flex-col gap-2 px-4 mb-4 text-xl" id="search-list-container">
+            <h2 class="text-center font-bold">Recent Search</h2>
+          </aside>
+        </div>
       </aside>
-    </div>
 
-    <div id="forecast" class="col-span-12 md:col-span-8 m-2">
-      <!-- today's forecast-->
-      <div id="currentForecast" class="border-4 border-indigo-500/100 rounded-lg p-2 mb-4">
+      <!-- today forecast -->
+      <div id="forecast" class="col-span-12 md:col-span-8 m-2 ">
+        <div id="currentForecast" class="border-4 border-bg-violet-500 rounded-lg p-2 mb-4"></div>
+
+        <!-- Furure forecast cards -->
+        <div id="futureForecast" class="p-2 grid grid-cols-12">
+          <h3 class="text-xl font-bold mb-8 col-span-10">Five-Day Forecast:</h3>
+        </div>
 
       </div>
-
-      <!-- Furure forecast cards -->
-      <div id="futureForecast" class="p-2 grid grid-cols-10">
-        <h3 class="text-xl font-bold mb-8 col-span-10">Five-Day Forecast:</h3>
-      </div>
-
     </div>
-  </div>
 
   </div>
-  </div>
-
-  </div>
-  </div>
-
-
-  </div>
-
-
-
-  </div>
-  </div>
-
-
-
-
-  </div> -->
-
-
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
